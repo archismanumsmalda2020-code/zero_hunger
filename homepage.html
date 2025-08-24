@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zero Hunger – Sharing is Caring</title>
+  <meta name="description" content="Zero Hunger – Sharing is Caring: community-driven action against hunger." />
+
+  <style>
+    :root{
+      --orange: rgb(255,165,0);
+      --highlight: rgb(255,200,50);
+      --brown: rgb(51,25,0);
+      --bg-deep: rgb(40,20,0);
+      --ink: #222;
+      --ink-2: #555;
+      --paper: #fff;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    *{ box-sizing: border-box; margin:0; padding:0; }
+    body{
+      font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color: var(--ink);
+      background: #faf8f6;
+    }
+
+    /* Navbar */
+    header{
+      background: linear-gradient(90deg, var(--bg-deep), #120a00 60%, var(--bg-deep));
+      color: #fff;
+      padding: 12px 24px;
+      position: sticky;
+      top:0;
+      z-index:100;
+    }
+    .nav{
+      max-width: 1100px; margin:auto;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .brand{ font-size:20px; font-weight:700; text-decoration:none; color:#fff; }
+    nav a{
+      color:#fff; text-decoration:none; margin:0 10px;
+      padding:8px 12px; border-radius:8px;
+    }
+    nav a:hover{ background: rgba(255,255,255,0.1); }
+    .donate-btn{ background: var(--orange); color: var(--brown)!important; font-weight:700; }
+
+    /* Hero */
+    .hero{
+      background: linear-gradient(180deg, rgba(255,165,0,0.15), transparent),
+                  url('hp1.jpg') no-repeat center/cover;
+      color:#fff;
+      text-align:center;
+      padding:80px 20px;
+    }
+    .hero h1{ font-size:2.2rem; margin-bottom:12px; }
+    .hero p{ max-width:600px; margin:auto; font-size:1rem; }
+
+    /* Sections */
+    main{ max-width:1100px; margin:auto; padding:40px 20px; }
+    section{ margin-bottom:40px; }
+    h2{ font-size:1.6rem; margin-bottom:12px; color: var(--orange); }
+    p{ margin-bottom:10px; color: var(--ink-2); }
+
+    .grid{
+      display:grid; gap:20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .card{
+      background: var(--paper);
+      padding:20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    /* Donate form */
+    form{ display:grid; gap:12px; max-width:500px; }
+    label{ font-weight:600; }
+    input{
+      width:100%; padding:12px; border:1px solid #ccc; border-radius:10px;
+    }
+    button{
+      padding:12px; border:0; border-radius:10px;
+      background: var(--orange); color:var(--brown); font-weight:700;
+      cursor:pointer;
+    }
+    button:hover{ background:#ffb733; }
+    a {
+        text-decoration: none;
+    }
+
+    /* Footer */
+    footer{
+      background:#0e0a06; 
+      color:#ddd;
+      padding:20px; 
+      text-align:center;
+    }
+    footer small{ 
+      opacity:.7; 
+      display:block; 
+      margin-bottom:10px;
+    }
+    .socials a{
+      color: var(--orange);
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+      padding:6px 12px;
+      border:1px solid var(--orange);
+      border-radius:8px;
+      transition:0.3s;
+    }
+    .socials a:hover{
+      background: var(--orange);
+      color: var(--brown);
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav">
+      <a href="#" class="brand"><img src="logo.png" alt="Zero Hunger Logo" style="height:48px; vertical-align:middle; margin-right:8px;">
+
+      Zero Hunger
+    </a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#works">Our Works</a>
+        <a href="donate_form.html" class="donate-btn">Donate Food</a>
+        <a href="registration.html" class="donate-btn">Registration</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Sharing Meals. Ending Hunger Together.</h1>
+    <p style="color: white;">We connect surplus food from households and restaurants with people in need. Every plate saved is a plate shared.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <main>
+    <section id="about" class="grid">
+      <div class="card">
+        <h2>About Us</h2>
+        <p>“The “Zero Hunger – Sharing is Caring” initiative aims to eliminate hunger in local communities by connecting food donors—individuals, NGOs, and restaurants—with those in need. By rescuing surplus food that would otherwise go to waste, the platform ensures that nutritious meals reach underprivileged families, shelters, and community kitchens. Beyond providing food, it fosters a culture of sharing, encourages volunteer participation, and raises awareness about responsible food distribution, nutrition, and sustainability, working together toward a world with zero hunger.</p>
+      </div>
+      <div class="card">
+        <h2>Our Mission</h2>
+        <p>Our mission is to achieve Zero Hunger by building a culture of sharing and community responsibility. We focus on rescuing surplus food from households, restaurants, and events, and distributing it to those in need with dignity and care. Through nutrition awareness, hyper-local food distribution, and volunteer-driven initiatives, we aim to reduce food waste, support underprivileged communities, and create a sustainable system where every meal counts by fostering collaboration between donors, volunteers, and local organizations./p>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works">
+      <h2>Our Works</h2>
+      <div class="grid">
+        <div class="card"><h3>Food Rescue</h3><p>Collecting surplus food from restaurants, events, and households and delivering it within 90 minutes.
+We ensure every rescued meal reaches families quickly, safely, and with dignity.
+</p></div>
+        <div class="card"><h3>Community Kitchens</h3><p>Local volunteers run pop-up kitchens to serve hot meals during festivals and exams.
+These kitchens also bring communities together, fostering teamwork and compassion.
+</p></div>
+        <div class="card"><h3>School Breakfast</h3><p>Providing nutritious breakfasts to improve learning outcomes and reduce absenteeism.
+We aim to support healthy growth, concentration, and academic performance for children.
+</p></div>
+        <div class="card"><h3>Zero-Waste Drives</h3><p>Workshops on safe storage, portioning, and composting to minimize food wastage.
+We educate households and communities on sustainable practices for a greener future.</p></div>
+      </div>
+    </section>
+
+    <!-- DONATE -->
+    <section id="donate">
+      <div class="card">
+        <h2>Donate Money</h2>
+<p><i>"Millions go to bed hungry every night.</p>
+<p>Your small donation can bring them hope.</p>
+<p>Every meal shared is a step towards Zero Hunger.</p>
+<p>Together, we can create a world without hunger.</p>
+<p>Donate today and be the reason someone smiles."</i></p>
+          <nav>
+
+          <button type="submit"><a href="donatemoney.html" class="donate-btn">               Donate Now                  </a></button>
+          </nav>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+    <!-- FOOTER -->
+  <footer>
+    <small>© 2025 Zero Hunger – Sharing is Caring.</small>
+    <div class="socials">
+      <a  target="_blank">Instagram</a>
+      <a  target="_blank">Twitter</a>
+      <a  target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+
+</body>
+</html>

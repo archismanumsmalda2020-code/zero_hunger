@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Food Form</title>
+  <style>
+    :root {
+      --orange: #ffa500;   /* Orange */
+      --brown: #331900;    /* Dark Brown */
+      --light-bg: #fdfaf6;
+    }
+
+    /* Reset box sizing */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--light-bg);
+      color: var(--brown); 
+      padding-top: 70px; /* offset for fixed navbar */
+      overflow-x: hidden; /* prevent horizontal scroll */
+    }
+
+    /* Navbar */
+    header {
+      background: var(--brown);  
+      color: #fff;
+      padding: 12px 24px;
+      position: fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:1000;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .brand {
+      display:flex;
+      align-items:center;
+      font-size:20px; 
+      font-weight:700; 
+      text-decoration:none; 
+      color:#fff; 
+    }
+    .brand img {
+      height:48px; 
+      margin-right:10px;
+    }
+    nav a {
+      color:#fff; 
+      text-decoration:none; 
+      margin:0 10px;
+      padding:8px 12px; 
+      border-radius:8px;
+    }
+    nav a:hover { background: rgba(255,255,255,0.1); }
+    .donate-btn { 
+      background: var(--orange); 
+      color: var(--brown)!important; 
+      font-weight:700; 
+    }
+
+    /* Container */
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 { 
+      color: var(--orange); 
+      margin-bottom: 20px; 
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px; /* adjust if needed */
+      border: none;
+    }
+
+    /* Custom button */
+    .custom-btn {
+      display:inline-block;
+      background: var(--orange);
+      color: var(--brown);
+      padding: 14px 28px;
+      border-radius: 12px;
+      border: none;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(255,165,0,.25);
+    }
+    .custom-btn:hover {
+      background:#ffb733;
+    }
+    /* Footer */
+    footer{
+      background:#0e0a06; 
+      color:#ddd;
+      padding:20px; 
+      text-align:center;
+    }
+    footer small{ 
+      opacity:.7; 
+      display:block; 
+      margin-bottom:10px;
+    }
+    .socials a{
+      color: var(--orange);
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+      padding:6px 12px;
+      border:1px solid var(--orange);
+      border-radius:8px;
+      transition:0.3s;
+    }
+    .socials a:hover{
+      background: var(--orange);
+      color: var(--brown);
+    }
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <a href="#" class="brand">
+      <img src="logo.png" alt="Zero Hunger Logo">
+      Zero Hunger
+    </a>
+    <nav>
+      <a href="homepage.html" class="donate-btn">Home</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Please Fill the Form to Donate</h2>
+
+    <!-- Google Form embed -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSct7rQUTLrhd1j4M1pp-Jd7iRWcgEyC-nVozYAJNaMVL4SXvA/viewform?embedded=true">
+      Loading…
+    </iframe>
+  </div>
+    <!-- FOOTER -->
+  <footer>
+    <small>© 2025 Zero Hunger – Sharing is Caring.</small>
+    <div class="socials">
+      <a  target="_blank">Instagram</a>
+      <a  target="_blank">Twitter</a>
+      <a  target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+</body>
+</html>

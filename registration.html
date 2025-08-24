@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Hunger - Sharing is Caring</title>
+  <style>
+    :root {
+      --orange: #ffa500;   /* Orange */
+      --brown: #331900;    /* Dark Brown */
+    }
+
+    /* Reset + Fix overflow */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: rgb(51, 25, 0);
+      text-align: center;
+      min-height: 100vh;         
+      display: flex;
+      flex-direction: column;    
+      overflow-x: hidden;        /* 🚀 Prevent horizontal scroll */
+    }
+
+    /* Navbar */
+    header {
+      background: var(--brown);  
+      color: #fff;
+      padding: 12px 16px;        /* smaller padding so it won’t overflow */
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; 
+      width: 100%;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .brand img {
+      height: 40px;    
+      margin-right: 8px; 
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;  /* wrap instead of overflowing */
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 6px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      white-space: nowrap; /* prevent breaking words */
+    }
+    nav a:hover { background: rgba(255,255,255,0.1); }
+    .donate-btn {
+      background: var(--orange);
+      color: var(--brown)!important;
+      font-weight: 700;
+    }
+
+    iframe {
+      width: 90%;
+      max-width: 640px;
+      height: 700px;
+      border: 2px solid var(--orange);
+      border-radius: 10px;
+      margin: 20px auto;
+      flex: 1;   
+    }
+
+    /* Footer */
+    footer{
+      background:#0e0a06; 
+      color:#ddd;
+      padding:20px; 
+      text-align:center;
+      width: 100%;
+    }
+    footer small{ 
+      opacity:.7; 
+      display:block; 
+      margin-bottom:10px;
+    }
+    .socials a{
+      color: var(--orange);
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+      padding:6px 12px;
+      border:1px solid var(--orange);
+      border-radius:8px;
+      transition:0.3s;
+    }
+    .socials a:hover{
+      background: var(--orange);
+      color: var(--brown);
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav">
+      <a href="#" class="brand">
+        <img src="logo.png" alt="Zero Hunger Logo">
+        Zero Hunger
+      </a>
+      <nav>
+        <a href="homepage.html" class="donate-btn">Home</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Single Google Form -->
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSdZvhaUBHvwD50IbkFRPZ4b-EKONS6yZSc0DBRHZmVapSPJaw/viewform?embedded=true">
+    Loading…
+  </iframe>
+
+  <!-- FOOTER -->
+  <footer>
+    <small>© 2025 Zero Hunger – Sharing is Caring.</small>
+    <div class="socials">
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Facebook</a>
+    </div>
+  </footer>
+
+</body>
+</html>
